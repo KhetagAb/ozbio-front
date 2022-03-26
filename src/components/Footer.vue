@@ -1,15 +1,16 @@
 <template>
-  <footer>
-    <div class="enigma_footer_area">
-      <div class="container">
-        <div class="col-md-12">
-          <p class="footer_info">© 2011 - 2022 ООО «ОЗБИО»</p>
-        </div>
-      </div>
-    </div>
-  </footer>
+  <v-footer
+      padless
+      color="#4f628c"
+  >
+    <v-col
+        class="text-center white--text"
+        cols="12"
+    >
+      © 2011 - {{new Date().getFullYear() }} — <strong>ООО «ОЗБИО»</strong>
+    </v-col>
+  </v-footer>
 </template>
-
 <script>
 export default {
   name: "Footer"
